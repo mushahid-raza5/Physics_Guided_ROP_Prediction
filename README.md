@@ -99,7 +99,7 @@ Physics_Guided_ROP_Prediction/
 │   ├── 01_EDA.ipynb               # Exploratory Data Analysis
 │   ├── 02_Models.ipynb            # Feature Selection & Model Fitting
 │   ├── 03_Results.ipynb           # RMSE Comparison & Visualizations
-│   └── Final_Project_Statistics.ipynb   # Original complete notebook
+│   └── Physics_Guided_Rop_Prediction_Master_File.ipynb   # Original complete notebook
 ├── reports/
 │   ├── Mushahid_Raza_Final_Project.pdf
 │   └── Mushahid_Raza_Final_Project.pptx
