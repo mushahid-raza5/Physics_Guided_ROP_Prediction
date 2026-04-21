@@ -6,9 +6,9 @@
 
 ## Overview
 
-This project applies a **physics-guided machine learning** approach to predict drilling Rate of Penetration (ROP) — the speed at which the drill bit penetrates rock. Instead of relying solely on statistical regression, we integrate the **Bingham ROP equation**, a well-established petroleum engineering model, and compare it against a log-transformed linear baseline.
+This project applies a **physics-guided machine learning** approach to predict drilling Rate of Penetration (ROP) the speed at which the drill bit penetrates rock. Instead of relying solely on statistical regression, we integrate the **Bingham ROP equation**, a well-established petroleum engineering model, and compare it against a log-transformed linear baseline.
 
-The key insight: by using **Variance Inflation Factor (VIF)** analysis to systematically remove collinear variables (SPPA, TFLO, Torque, HKLD, MD), we reduce 7 candidate features down to just 2 — **Weight on Bit (WOB)** and **RPM** — which are the exact inputs to the classical Bingham model. Statistics and domain physics converge.
+The key insight: by using **Variance Inflation Factor (VIF)** analysis to systematically remove collinear variables (SPPA, TFLO, Torque, HKLD, MD), we reduce 7 candidate features down to just 2 **Weight on Bit (WOB)** and **RPM**, which are the exact inputs to the classical Bingham model. Statistics and domain physics converge.
 
 ---
 
@@ -59,11 +59,11 @@ See [`data/README.md`](data/README.md) for full column documentation.
 
 ## Methodology
 
-1. **Exploratory Data Analysis** — scatter plots, histograms, correlation heatmaps
-2. **VIF-Based Variable Selection** — iteratively removing features with VIF > 5 to eliminate multicollinearity
-3. **Log-MLR Baseline** — `log(ROP) ~ WOB + RPM` via OLS (R² = 0.384)
-4. **Bingham Physics Model** — nonlinear curve fitting via `scipy.optimize.curve_fit`
-5. **Residual Diagnostics** — Q-Q plots, Breusch–Pagan heteroscedasticity test
+1. **Exploratory Data Analysis**: scatter plots, histograms, correlation heatmaps
+2. **VIF-Based Variable Selection**: iteratively removing features with VIF > 5 to eliminate multicollinearity
+3. **Log-MLR Baseline**: `log(ROP) ~ WOB + RPM` via OLS (R² = 0.384)
+4. **Bingham Physics Model**: nonlinear curve fitting via `scipy.optimize.curve_fit`
+5. **Residual Diagnostics**: Q-Q plots, Breusch–Pagan heteroscedasticity test
 
 ---
 
