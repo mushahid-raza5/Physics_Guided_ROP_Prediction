@@ -71,8 +71,8 @@ See [`data/README.md`](data/README.md) for full column documentation.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/mushahid-raza5/physics-guided-rop-prediction.git
-cd physics-guided-rop-prediction
+git clone https://github.com/mushahid-raza5/Physics_Guided_ROP_Prediction.git
+cd Physics_Guided_ROP_Prediction
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -88,7 +88,7 @@ Output plots are saved to `assets/`.
 ## Repository Structure
 
 ```
-physics-guided-rop-prediction/
+Physics_Guided_ROP_Prediction/
 ├── assets/                        # Generated plots for README
 │   ├── correlation_matrix.png
 │   └── model_comparison.png
@@ -96,7 +96,10 @@ physics-guided-rop-prediction/
 │   ├── README.md                  # Dataset documentation
 │   └── USROP_A 3 N-SH-F-15d - Final.csv
 ├── notebooks/
-│   └── Final_Project_Statistics.ipynb   # Full EDA & modeling narrative
+│   ├── 01_EDA.ipynb               # Exploratory Data Analysis
+│   ├── 02_Models.ipynb            # Feature Selection & Model Fitting
+│   ├── 03_Results.ipynb           # RMSE Comparison & Visualizations
+│   └── Final_Project_Statistics.ipynb   # Original complete notebook
 ├── reports/
 │   ├── Mushahid_Raza_Final_Project.pdf
 │   └── Mushahid_Raza_Final_Project.pptx
